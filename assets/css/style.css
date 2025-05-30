@@ -21,11 +21,43 @@ body {
   line-height: 1.6;
   color: white;
 }
+/* FIX OVERFLOWING ON MOBILE */
 html, body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
+
+/* UNIVERSAL IMAGE AND ELEMENT HANDLING */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CONTAINER WIDTH SAFEGUARD */
+.container,
+.container-contact,
+.container-portfolio {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* FOR FLEX/GRID WRAPS THAT MAY OVERFLOW */
+.row,
+.portfolio-container,
+.services-cards,
+.extra-projects {
+  flex-wrap: wrap;
+}
+
+/* HANDLE ELEMENTS WITH ABSOLUTE POSITIONING */
+.button_about,
+.button_contact,
+.button_resume {
+  max-width: 90vw;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -1115,5 +1147,57 @@ footer {
   .social-icon {
     justify-content: center;
     color: white !important;
+  }
+   
+     nav ul {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-box1,
+  .about-box2,
+  .contact-box1,
+  .contact-form {
+    margin: 0 20px;
+    width: auto;
+  }
+
+  .tagline {
+    font-size: 28px;
+  }
+
+  .name {
+    font-size: 32px;
+  }
+
+  .portfolio-card,
+  .service-card {
+    width: 90%;
+    margin: auto;
+  }
+
+  .skills-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .icon-stack {
+    display: none;
+  }
+
+  .scroll-top {
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
   }
 }
