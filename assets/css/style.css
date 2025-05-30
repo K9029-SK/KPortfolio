@@ -21,7 +21,11 @@ body {
   line-height: 1.6;
   color: white;
 }
-
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 ::-webkit-scrollbar {
   display: none;
 }
