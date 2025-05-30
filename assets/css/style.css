@@ -1200,4 +1200,18 @@ footer {
     bottom: 10px;
     right: 10px;
   }
+  html, body {
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Optional: Prevent specific elements from overflowing */
+  .your-container-class {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
 }
