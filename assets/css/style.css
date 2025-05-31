@@ -857,9 +857,9 @@ footer {
   /* ===== Background fix: keep original size on mobile ===== */
   .background {
     background-size: contain;
-    background-repeat: no-repeat;
     background-position: center top;
-    background-attachment: scroll !important;
+    background-attachment: scroll;
+    min-height: 100vh;
   }
 
   /* ===== Shape Styles: Responsive Sizing & Position ===== */
