@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .background {
+      background: url('assets/img/geometry-background.png') no-repeat center 60px fixed;
+      background-size: cover;
+    }
+    .circle {
+      background: url('assets/img/circle.png') no-repeat center/contain;
+    }
+    .square {
+      background: url('assets/img/square.png') no-repeat center/contain;
+    }
+    .star {
+      background: url('assets/img/star.png') no-repeat center/contain;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar (Fixed) -->
+  <nav>
+    <div class="nav-logo">
+      <img src="assets/img/logo k-pica@3x.png" alt="Company Logo">
+    </div>
+    <div class="nav-toggle" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="navMenu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#service" class="nav-link">Services</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Background Wrapper -->
+  <div class="background">
+
+    <!-- Home Section -->
+    <section id="home" class="container">
+      <div class="shapes">
+        <div class="star"></div>
+        <div class="square"></div>
+        <div class="circle"></div>
+      </div>
+
+      <div class="border-frame"></div>
+      <div class="box-frame"><p>KS</p></div>
+
+      <!-- <h1>Home</h1> !-->
+      <p class="greeting">Hi, my name is</p>
+      <h1 class="name">Kane Stephene Frogosa</h1>
+      <h2 class="tagline">I develop creative web solutions.</h2>
+      <p class="description">
+        I'm an imaginative developer who loves turning creative concepts into useful, well-designed tools.
+        I enjoy building convenient, human-centered solutions for the internet and constantly challenge myself 
+        to grow and improve through each project.
+      </p>
+      <a href="#about" class="button_about">Learn More About Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container-about">
+      <h1>About</h1>
+      <p>Here's a little bit about who I am and what I do.</p>
+
+      <div class="about-content">
+
+        <!-- Left Column -->
+        <div class="about-box1">
+          <h2 class="about-heading-personal">Personal Info</h2>
+          <div class="about-content-wrapper">
+            <ul class="about-list">
+              <li class="icon-stack">
+                <i class="bi bi-person-fill"></i>
+                <i class="bi bi-geo-alt-fill"></i>
+                <i class="bi bi-calendar-event-fill"></i>
+                <i class="bi bi-hourglass-split"></i>
+                <i class="bi bi-envelope-fill"></i>
+              </li>
+              <li><span class="label">Full Name</span><span class="value">Kane Stephene Frogosa</span></li>
+              <li><span class="label">Location</span><span class="value">Altavas, Aklan, PH</span></li>
+              <li><span class="label">Birthday</span><span class="value">September 20, 2002</span></li>
+              <li><span class="label">Age</span><span class="value">22</span></li>
+              <li><span class="label">Email</span><span class="value">skanefrogosa@gmail.com</span></li>
+            </ul>
+            <a href="#contact" class="button_contact">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="about-box2">
+          <h2 class="about-heading">About Me</h2>
+          <p class="about-description">
+            I'm a creative and detail-oriented developer with a passion for intuitive web and system design. I specialize in both front-end and back-end development, building user-friendly web apps and engaging digital experiences that balance function with form. I also enjoy exploring game development and interactive applications, constantly looking for new ways to bring ideas to life through code.<br><br>
+            As a recent graduate, I'm actively growing my career as a programmer—always learning, improving, and refining my skills. I’m driven by a desire to turn concepts into practical, human-centered solutions that make a real impact.
+          </p>
+          <h2 class="about-heading-skills">Skills</h2>
+          <p class="about-description-2">Programming Languages & Tools</p>
+          <ul class="skills-list">
+            <li><img src="assets/img/html.png" alt="HTML" title="HTML"></li>
+            <li><img src="assets/img/css.png" alt="CSS" title="CSS"></li>
+            <li><img src="assets/img/javascript.png" alt="JavaScript" title="JavaScript"></li>
+            <li><img src="assets/img/php.png" alt="PHP" title="PHP"></li>
+            <li><img src="assets/img/mysql.png" alt="MySQL" title="MySQL"></li>
+            <li><img src="assets/img/Sass.png" alt="Sass" title="Sass"></li>
+            <li><img src="assets/img/gdscript.png" alt="Godot" title="Godot"></li>
+            <li><img src="assets/img/react.png" alt="React" title="React"></li>
+          </ul>
+        </div>
+      </div>
+
+        <!-- below 3 Column -->
+        <div class="about-box3">
+          <h2 class="about-heading-resume">Resume</h2>
+        
+          <div class="resume-cards">
+            <div class="resume-card">
+              <h3>Summary</h3>
+              <h5>Kane Stephene Frogosa</h5>
+              <p>A Recently gradute Software Engineering. Eager to gain hands-on experience and contribute to a dynamic team. A quick learner, observant, and highly motivated to apply and enhance my IT skills in real-world settings.</p>
+                <ul>
+                  <li>Man-up, Altavas, Aklan 5616</li>
+                  <li>+639666711585</li>
+                  <li>skanefrogosagmail.com</li>
+                </ul>
+            </div>
+            <div class="resume-card">
+              <h3>Education</h3>
+              <h5>Altavas National School 2019-2021</h5>
+              <ul>
+                  <h5>Senior High School - TVL Track: ICT STRAND</h5>
+                  <li>Trained in Animation (NC II) and .NET Technology (NC III)</li>
+              </ul>
+              <h5>Aklan State University - Kalibo Campus 2021-2025</h5>
+              <ul>
+                  <h5>BS in Information Technology - Software Engineering</h5>
+                  <li>With Honor</li>
+              </ul> 
+            </div>
+            <div class="resume-card">
+              <h3>Experience</h3>
+              <h5>Internship DENR - PENRO Aklan</h5>
+              <ul>
+                  <h5>General Records Unit Feb-May 2025</h5>
+                    <li>Organized physical and digital files</li>
+                    <li>Encoded incoming documents for tracking</li>
+                    <li>Assisted clients with document-related concerns</li>
+                    <li>Supported daily office tasks</li>
+              </ul>
+            </div>
+          </div>
+        <a href="assets/pdf/resume.pdf" class="button_resume">View Resume</a>
+        </div>
+        
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container-portfolio">
+      <h1>Portfolio</h1>
+      <p>Projects I have worked on.</p>
+
+      <div class="portfolio-container">
+        <!-- Card 1 -->
+        <div class="portfolio-card">
+          <img src="assets/img/Game Pic.png" alt="Project 1">
+          <h3>Ready, Steady, Survive!</h3>
+          <p>A game that educates players about fire awareness and prevention.</p>
+          <ul class="portfolio-tools">
+            <li>Godot</li>
+            <li>Android Studio</li>
+          </ul>
+          <div class="port-btn">
+            <a href="https://github.com/K9029-SK/Ready-Steady-Survive-.git" class="portfolio-btn small-btn">Learn More <i class="bi bi-info-circle"></i></a>
+            <a href="https://github.com/K9029-SK/Ready-Steady-Survive-.git" class="portfolio-btn small-btn">Live App <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- hidden 
+        <!-- Card 2
+        <div class="portfolio-card">
+          <img src="assets/img/square.png" alt="Project 2">
+          <h3>Project Title 2</h3>
+          <p>A short description of this project goes here.</p>
+          <ul class="portfolio-tools">
+            <li>html</li>
+            <li>html</li>
+          </ul>
+          <div class="port-btn">
+            <a href="#" class="portfolio-btn">Learn More</a>
+            <a href="#" class="portfolio-btn">Live App</a>
+          </div>
+        </div>
+
+        <!-- Card 3 
+        <div class="portfolio-card">
+          <img src="assets/img/square.png" alt="Project 3">
+          <h3>Project Title 3</h3>
+          <p>A short description of this project goes here.</p>
+          <ul class="portfolio-tools">
+            <li>html</li>
+            <li>html</li>
+          </ul>
+          <div class="port-btn">
+            <a href="#" class="portfolio-btn">Learn More</a>
+            <a href="#" class="portfolio-btn">Live App</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-toggle">
+        <button id="viewMoreBtn" class="portfolio-view-btn">View More</button>
+      </div>
+
+      <!-- Hidden Additional Cards 
+      <div class="portfolio-container extra-projects" style="display: none;">
+        <!-- Extra Card 1 
+        <div class="portfolio-card">
+          <img src="assets/img/square.png" alt="Project 1">
+          <h3>Project Title 1</h3>
+          <p>A short description of this project goes here.</p>
+          <ul class="portfolio-tools">
+            <li>html</li>
+            <li>html</li>
+          </ul>
+          <div class="port-btn">
+            <a href="#" class="portfolio-btn">Learn More</a>
+            <a href="#" class="portfolio-btn">Live App</a>
+          </div>
+        </div>
+
+        <!-- Extra Card 2
+        <div class="portfolio-card">
+          <img src="assets/img/square.png" alt="Project 1">
+          <h3>Project Title 1</h3>
+          <p>A short description of this project goes here.</p>
+          <ul class="portfolio-tools">
+            <li>html</li>
+            <li>html</li>
+          </ul>
+          <div class="port-btn">
+            <a href="#" class="portfolio-btn">Learn More</a>
+            <a href="#" class="portfolio-btn">Live App</a>
+          </div>
+        </div>
+
+        <!-- Extra Card 3 
+        <div class="portfolio-card">
+          <img src="assets/img/square.png" alt="Project 1">
+          <h3>Project Title 1</h3>
+          <p>A short description of this project goes here.</p>
+          <ul class="portfolio-tools">
+            <li>html</li>
+            <li>html</li>
+          </ul>
+          <div class="port-btn">
+            <a href="#" class="portfolio-btn">Learn More</a>
+            <a href="#" class="portfolio-btn">Live App</a>
+          </div>
+        </div>
+
+        <div class="portfolio-toggle">
+          <button id="viewLessBtn" class="portfolio-less-btn" style="display: none;">View Less</button>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="service" class="container">
+      <h1>Services</h1>
+      <p>I offer a range of services to help businesses and individuals establish their online presence.</p>
+      <div class="services-cards">
+        <div class="service-card">
+          <h3>Web Development</h3>
+          <ul>
+            <li>Develop responsive and user-friendly websites</li>
+            <li>Handle both front-end and back-end coding</li>
+            <li>Use modern tools and frameworks for fast, secure sites</li>
+            <li>Tailor functionality to meet client-specific needs</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h3>UI/UX Design</h3>
+          <ul>
+            <li>Design intuitive and visually appealing interfaces</li>
+            <li>Create mockups and prototypes using Adobe Photoshop and Figma</li>
+            <li>Focus on user-friendly layouts and interactive elements</li>
+            <li>Ensure consistent branding and user experience</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h3>Project Planning & Documentation</h3>
+          <ul>
+            <li>Prepare comprehensive project documentation</li>
+            <li>Outline clear development workflows and timelines</li>
+            <li>Draft project proposals, technical specifications, and progress reports</li>
+            <li>Ensure smooth collaboration and project alignment from start to finish</li>
+          </ul>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container-contact">
+      <h1>Get In Touch</h1>
+      <p>I'm currently available for freelance work. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
+    
+      <div class="contact-content"> <!-- grid container -->
+        
+        <!-- Left side container with styled box -->
+        <div class="contact-box1">
+          <h2>Contact Information</h2>
+          <ul class="contact-list">
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span class="label">Location</span>
+              <span class="value">Altavas, Aklan, PH</span>
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill"></i>
+              <span class="label">Email</span>
+              <span class="value">skanefrogosa@gmail.com</span>
+            </li>
+            <li>
+              <i class="bi bi-phone-fill"></i>
+              <span class="label">Phone</span>
+              <span class="value">+63 9666711585</span>
+            </li>
+          </ul>
+        
+          <h4>Follow Me</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+        
+    
+        <!-- Right side form, no container box -->
+        <div class="contact-form">
+          <form id="contactForm" action="https://formsubmit.co/skanefrogosa@gmail.com" method="POST">
+            <!-- Prevent Formsubmit Redirect -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="">
+        
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required maxlength="35">
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required maxlength="35">
+        
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" maxlength="100">
+        
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="4" required maxlength="350" style="resize: none;"></textarea>
+        
+            <button type="submit" class="send-btn">Send Message</button>
+          </form>
+        
+          <!-- Success Message (Initially Hidden) -->
+          <p id="successMessage" style="display: none; color: rgb(16, 138, 16); margin-top: 10px;">
+            ✅ Message sent successfully!
+          </p>
+        </div>
+    
+      </div>
+    </section>    
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- JavaScript -->
+  
+  <script>
+ const form = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // prevent redirect
+
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          successMessage.style.display = 'block';
+          form.reset();
+
+          // Fade out after 3 seconds
+          setTimeout(() => {
+            successMessage.classList.add('fade-out');
+          }, 3000);
+
+          // Hide completely after fade
+          setTimeout(() => {
+            successMessage.style.display = 'none';
+            successMessage.classList.remove('fade-out');
+          }, 4000);
+        } else {
+          alert("❌ Something went wrong.");
+        }
+      })
+      .catch(error => {
+        alert("❌ Failed to submit. Please check your internet.");
+      });
+    });
+  </script>
+  
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
