@@ -914,21 +914,9 @@ footer {
   position: absolute;
   top: 185px;
   right: 204px;
-  background-color: #172a45;
   overflow: hidden;
 }
 
-.box-frame p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #64ffda;
-  font-size: 60px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  text-align: center;
-}
 
 @keyframes border-frame {
   0% { transform: rotate(7deg); }
